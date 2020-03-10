@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "seat_management", "seat_management\seat_management.csproj", "{96CEFDFE-E09B-4028-91CB-5D5FC2E7CD61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "seat_management.Tests", "seat_management.Tests\seat_management.Tests.csproj", "{BFF08F19-5D14-4F7F-A5C0-E858BD0FC5DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96CEFDFE-E09B-4028-91CB-5D5FC2E7CD61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96CEFDFE-E09B-4028-91CB-5D5FC2E7CD61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96CEFDFE-E09B-4028-91CB-5D5FC2E7CD61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96CEFDFE-E09B-4028-91CB-5D5FC2E7CD61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFF08F19-5D14-4F7F-A5C0-E858BD0FC5DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFF08F19-5D14-4F7F-A5C0-E858BD0FC5DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFF08F19-5D14-4F7F-A5C0-E858BD0FC5DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFF08F19-5D14-4F7F-A5C0-E858BD0FC5DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
