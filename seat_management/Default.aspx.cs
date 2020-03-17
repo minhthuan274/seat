@@ -29,7 +29,7 @@ namespace seat_management
         {
             this.chairSearch.Add(new Chair
             {
-                x = 1,
+                x = 2,
                 y = 2,
                 group = "A"
             });
