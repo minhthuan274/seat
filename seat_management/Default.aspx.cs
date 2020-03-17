@@ -10,6 +10,7 @@ namespace seat_management
     {
         public int x { get; set; }
         public int y { get; set; }
+        public string group { get; set; }
     }
 
     public class Group
@@ -21,11 +22,17 @@ namespace seat_management
     public partial class Default : System.Web.UI.Page
     {
         public List<Group> groups = new List<Group>();
+        public List<Chair> chairSearch = new List<Chair>();
    
 
         public void button1Clicked(object sender, EventArgs args)
         {
-            button1.Text = "You clicked me";
+            this.chairSearch.Add(new Chair
+            {
+                x = 1,
+                y = 2,
+                group = "A"
+            });
         }
 
         protected void Page_Load(Object sender, EventArgs e)
@@ -51,7 +58,27 @@ namespace seat_management
                 }
                 this.groups.Add(groupA);
             }
-            
+            this.chairSearch.Add(new Chair
+            {
+                x = 1,
+                y = 2,
+                group = "A"
+            });
+
+        }
+
+        public bool checkSearch(int x, int y, string group)
+        {
+            var foundChair = new Chair
+            {
+                x = x,
+                y = y,
+                group = group
+            };
+            return this.chairSearch.FindIndex(item =>
+            {
+                return item.x == foundChair.x && item.y == foundChair.y && item.group == foundChair.group;
+            }) > -1;
         }
     }
 }

@@ -13,7 +13,7 @@
   <% foreach (var group in groups) { %>
     <div class="grid-container-item">
        <% foreach (var chair in group.chairs) { %>
-          <div class="grid-item"> <%= chair.x %> <%= chair.y %> </div>
+          <div class="grid-item <%= checkSearch(chair.x, chair.y, group.name) ? "found" : null %>"> <%= chair.x %> <%= chair.y %> </div>
        <% } %>
     </div>
   <% } %>
